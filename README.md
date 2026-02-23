@@ -4,104 +4,77 @@
 <p align="center">
   <img src="images/Site_Proposal.jpg" width="30%" />
   <img src="images/Vader_Graph.png" width="30%" />
-  <img src="images/topic_modeling.png" width="30%" />
   <img src="images/confusion_matrices.png" width="30%" />
 </p>
 
 ---
+
 ## Overview
 
-This project explores the integration of geospatial mobility data and natural language text analysis to uncover spatial patterns in human behaviour and public perception.
+This project integrates mobility analytics and natural language processing to explore how spatial behaviour and public perception can inform urban decision-making.
 
 Using:
 
-- Gowalla mobility check-in data from Cambridge, UK  
-- Amenity review texts from Calgary, Canada  
+- Gowalla mobility check-ins (Cambridge, UK)  
+- Restaurant review texts (Calgary, Canada)  
 
-The study investigates how movement patterns and textual sentiment can jointly inform urban spatial analysis.
-
-The central question:
-
-> How can mobility trajectories and text-based sentiment modelling be combined to better understand spatial dynamics and place perception?
+the study demonstrates how geospatial and textual data can jointly support infrastructure and site-selection analysis.
 
 ---
 
-## Key Contributions
+## Part I — Cambridge: Mobility & Park Proposal
 
-1. **Mobility-Based Spatial Pattern Analysis**  
-   Analysed Gowalla check-in data to identify spatial clustering and movement trends within Cambridge.
+**Objective:**  
+Use check-in data to model movement patterns and propose potential new community park locations.
 
-2. **Sentiment Analysis using VADER**  
-   Applied rule-based sentiment modelling to Calgary amenity reviews to quantify public perception of urban locations.
+**Approach:**
+- Computed shortest-path distances from user check-in sequences.
+- Conducted spatial centrality analysis to identify high-accessibility zones.
+- Proposed candidate park locations in areas with movement density but limited green access.
 
-3. **Topic Modelling for Place Characterisation**  
-   Used topic modelling techniques to extract dominant themes from amenity review texts.
-
-4. **Integrated Spatial-Textual Interpretation**  
-   Connected sentiment and topic signals with geographic distribution to interpret socio-spatial dynamics.
+**Note:** Centrality metrics should not be used as standalone planning tools and must be contextualised with socioeconomic and spatial constraints.
 
 ---
 
-## Methodology
+## Part II — Calgary: Restaurant Review Modelling & Site Selection
 
-### Data
+**Objective:**  
+Predict restaurant review scores and identify optimal locations for new restaurant development.
 
-- Gowalla mobility dataset (Cambridge, UK)
-- Amenity review texts (Calgary, Canada)
+### Supervised Learning
+- Trained classification models to predict review scores from text.
+- Evaluated using confusion matrices and classification metrics.
 
-### Techniques
+### Spatial-Textual Insight
+- Extracted reviews mentioning “great location.”
+- Included negative reviews to capture spatial desirability independent of service quality.
+- Categorised keywords into:
+  - Natural features (river, park, hills)
+  - Urban structures (downtown, main street)
+  - Experiential qualities (quiet, vibrant)
 
-- Spatial clustering and distribution analysis
-- VADER sentiment analysis
-- Topic modelling (LDA)
-- Confusion matrix evaluation (classification validation)
-
-### Tools
-
-- Python
-- Pandas
-- Scikit-learn
-- NLTK / VADER
-- GeoPandas
-- Matplotlib / Seaborn
+This framework operationalises customer-defined spatial perception for location intelligence.
 
 ---
 
-## Results Summary
+## Ethical & Methodological Considerations
 
-The study demonstrates that:
-
-- Mobility check-in patterns reveal concentrated spatial hubs within Cambridge.
-- Sentiment polarity varies significantly across amenity categories in Calgary.
-- Topic modelling identifies recurring themes related to service quality, accessibility, and environment.
-- Integrating geospatial and textual signals enables richer spatial interpretation beyond movement data alone.
+- Mobility data carries re-identification risk and requires anonymisation safeguards.
+- Spatial centrality should be complemented with contextual urban variables for real-world application.
 
 ---
 
-## Why This Matters
+## Tools
 
-Urban datasets increasingly combine location and text (geotagged content, reviews, social media).
-
-This project illustrates how:
-
-- Text-based sentiment modelling enhances spatial analytics.
-- Public perception can be mapped geographically.
-- Mobility and natural language processing can be integrated into unified urban intelligence frameworks.
-
-Applications include:
-
-- Urban planning
-- Place-based reputation analysis
-- Smart city analytics
-- Location-based recommendation systems
+Python · Pandas · Scikit-learn · NLTK/VADER · GeoPandas · Network analysis
 
 ---
 
 ## Repository Structure
 
-- `images/` – Visualisations and modelling outputs  
-- `Main_code_gowalla.ipynb` – Core analysis notebook  
-- `Analysis_doc_gowalla.pdf` – Full research document  
+- `images/` – Visual outputs  
+- `Main_code_gowalla.ipynb` – Analysis pipeline  
+- `Analysis_doc_gowalla.pdf` – Full report  
 - `README.md`  
 
 ---
