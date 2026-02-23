@@ -80,5 +80,5 @@ Python · Pandas · Scikit-learn · NLTK/VADER · GeoPandas · Network analysis
 ## Author
 
 Mohamad Rendy Irawan Ifran  
-MSc Social & Geographic Data Science  
+MSc Social and Geographic Data Science  
 University College London
