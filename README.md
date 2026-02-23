@@ -32,8 +32,6 @@ Use check-in data to model movement patterns and propose potential new community
 - Conducted spatial centrality analysis to identify high-accessibility zones.
 - Proposed candidate park locations in areas with movement density but limited green access.
 
-**Note:** Centrality metrics should not be used as standalone planning tools and must be contextualised with socioeconomic and spatial constraints.
-
 ---
 
 ## Part II — Calgary: Restaurant Review Modelling & Site Selection
