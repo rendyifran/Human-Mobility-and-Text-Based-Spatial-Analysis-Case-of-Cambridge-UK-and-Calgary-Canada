@@ -4,7 +4,7 @@
 <p align="center">
   <img src="images/Site_Proposal.jpg" width="30%" />
   <img src="images/Vader_Graph.png" width="30%" />
-  <img src="images/confusion_matrices.png" width="30%" />
+  <img src="images/topic_modeling.png" width="30%" />
 </p>
 
 ---
